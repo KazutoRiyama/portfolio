@@ -5,6 +5,39 @@
   box-sizing: inherit; 
 }
 
+
+
+/* data theme */
+
+:root {
+  --grid-unit: 1rem;
+  --border-radius-base: 0.5rem;
+}
+
+[data-theme="light"] {
+  --color-bg: aliceblue;
+  --color-fg: #000000;
+}
+
+[data-theme="dark"] {
+  --color-bg: #000000;
+  --color-fg: #ffffff;
+}
+
+.button {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  transition: all var(--global-transition-time) ease-in-out;
+  border-radius: 2rem;
+  cursor: pointer;
+  color: var(--color-fg);
+  background-color: var(--color-bg);
+  border: 0.25rem solid var(--color-fg);
+}
+
+/* html */
+
 html {
     height: 100%;
     margin: 0;
@@ -13,8 +46,8 @@ html {
 body {
     min-height: 100vh;
     margin: 0 auto;
-    background-color: aliceblue;
-    color: rgb(0, 0, 0);
+    background-color: var(--color-bg);
+    color: var(--color-fg);
     font-style: 'Proza Libre', 'Open Sans';
     font-size: 20px;
     height: 100%;
@@ -35,6 +68,8 @@ p {
     margin: 10px 0px;
     line-height: 25px;
 }
+
+/* header */
 
 .masthead {
     color: rgb(0, 0, 0);
@@ -60,10 +95,12 @@ p {
     padding: 0;
     text-decoration: none;
     font-size: 1.25rem;
+    align-items: center;
 }
 
 .navigation-items li {
     margin-left: 15px;
+    text-align: center;
 }
 
 .navigation-items li:first-child {
@@ -122,4 +159,16 @@ footer {
 .fa-envelope {
     margin-top: 30px;
     padding: 10px 0px;
+}
+
+@media only screen and (max-width: 768px) {
+    .text-container {
+    margin: 2rem; 
+}
+.about-me-container, #projects, #skills, .contact-container {
+    margin: 0;
+}
+.pp {
+    display: none;
+}
 }
