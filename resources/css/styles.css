@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Proza+Libre:wght@700&display=swap");
+*,
+::before,
+::after {
+  box-sizing: inherit; 
+}
+
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: aliceblue;
+    color: rgb(0, 0, 0);
+    font-style: 'Proza Libre', 'Open Sans';
+    font-size: 20px;
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    position: relative;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+p {
+    margin: 10px 0px;
+    line-height: 25px;
+}
+
+.masthead {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    padding: 0;
+}
+
+.head-container {
+    max-width: min(96%, 1600px);
+    margin: 0 auto;
+}
+
+.primary-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation-items {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+.navigation-items li {
+    margin-left: 15px;
+}
+
+.navigation-items li:first-child {
+    margin-left: 0;
+}
+
+.navigation-items a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.navigation-items a:hover {
+    color: aquamarine;
+}
+
+/* MAIN */
+
+/*  about me */
+
+.pp {
+    height: 300px;
+    width: auto;
+    display: flex;
+    float: inline-end;
+}
+
+.about-me-container, #projects, #skills, .contact-container {
+    margin: 50px 200px;
+}
+
+.text-container {
+    margin-right: 30rem;
+    margin-left: 10rem;
+}
+
+/* projects */
+
+/* Skills */
+
+.fa-brands {
+    font-size: 40px;
+}
+
+/* footer */
+
+footer {
+    text-align: center;
+    bottom: 0%;
+    position: fixed; 
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot {
+    
+}
