@@ -42,6 +42,7 @@ html {
     height: 100%;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 body {
     min-height: 100vh;
@@ -75,6 +76,7 @@ p {
     color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
     padding: 0;
+    width: 100%;
 }
 
 .head-container {
@@ -162,11 +164,22 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
+   
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+    }
     .text-container {
-    margin: 2rem; 
+    margin: 1.5rem 1rem; 
+    padding: 0;
+    
+    width: auto;
+    max-width: 100%;
 }
 .about-me-container, #projects, #skills, .contact-container {
     margin: 0;
+    padding: 0 1rem;
+    width: 100%;
 }
 .pp {
     display: none;
