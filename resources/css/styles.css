@@ -5,6 +5,17 @@
   box-sizing: inherit; 
 }
 
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;           /* hides horizontal scrollbar */
+    width: 100%;
+    min-width: 0;
+}
 
 
 /* data theme */
@@ -71,6 +82,10 @@ p {
 }
 
 /* header */
+
+.mobile-header {
+    display: none;
+}
 
 .masthead {
     color: rgb(0, 0, 0);
@@ -183,5 +198,45 @@ footer {
 }
 .pp {
     display: none;
+}
+}
+
+@media only screen and (max-width: 375px) {
+   
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+    .text-container {
+    margin: 1.5rem 0; 
+    padding: 0 15px;
+    width: 100%;
+    max-width: 100%;
+}
+ h2, h1, p, li, a {
+        margin: 0.8rem 0;
+        padding: 0;
+        word-break: break-word;       /* crucial for long words/URLs/Japanese text */
+        overflow-wrap: break-word;
+        hyphens: auto;
+    }
+.about-me-container, #projects, #skills, .contact-container {
+    margin: 0;
+    padding: 0 1rem;
+    width: 100%;
+}
+.pp {
+    display: none;
+}
+
+.masthead {
+    display: none;
+}
+.mobile-header {
+    display: contents;
 }
 }
