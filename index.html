@@ -69,15 +69,36 @@
             <div class="text-container">
             <h2>Projects</h2>
             <ul>
-                <li><a class="project-title" href="https://kazutoriyama.github.io/Ln.jp/index.html" target="_blank">Personnal Website</a></li>
-                <p>Personnal website on light novels in japanese. Mainly used to
-                    add/apply new features learned in CodeCademy courses.
-                </p>
-                <li><a class="project-title" href="https://kazutoriyama.github.io/Mixed_messages/" target="_blank">Mixed Messages</a></li>
-                <p>A JavaScript exercice to mix multiple random messages together.
-                    Astrology: Give you one random sign for good and one for bad
-                    compatibility, the luck and a random advice.
-                </p>   
+                <li>
+    <a class="project-title" href="https://kazutoriyama.github.io/Ln.jp/index.html" target="_blank">Personnal Website</a>
+    <p>Personnal website on light novels in japanese. Mainly used to add/apply new features 
+        learned in CodeCademy courses.</p>
+    
+    <div class="screenshot-wrapper">           <!-- ← new wrapper div -->
+        <button class="secret-button">Screenshot</button>
+        <img class="secret-img" 
+             src="resources/images/PersonalWebsite.png" 
+             width="600" 
+             style="display: none;" 
+             alt="personal website screenshot">
+    </div>
+</li>
+
+<!-- Project 2 (example – add the same pattern when you add a screenshot) -->
+<li>
+    <a class="project-title" href="https://kazutoriyama.github.io/Mixed_messages/" target="_blank">Mixed Messages</a>
+    <p>A JavaScript exercice to mix multiple random messages together. Astrology: Give you one 
+        random sign for good and one for bad compatibility, the luck and a random advice.</p>
+    
+    <div class="screenshot-wrapper">
+        <button class="secret-button">Screenshot</button>
+        <img class="secret-img" 
+             src="resources/images/AstroWebsite.png" 
+             width="600" 
+             style="display: none;" 
+             alt="mixed messages screenshot">
+    </div>
+</li>
             </ul>
             </div>
         </section>
@@ -105,5 +126,6 @@
 
     </main>
     <script src="main.js"></script>
+    <script src="secretimg.js"></script>
 </body>
 </html>
